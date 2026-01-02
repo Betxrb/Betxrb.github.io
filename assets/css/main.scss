@@ -6,7 +6,7 @@
 @import "syntax";
 
 /* ================================
-   🌸 BASE STYLE — Girly / Substack
+   🌸 BASE (DAY) — Girly / Substack
    ================================ */
 
 html,
@@ -16,66 +16,77 @@ body {
   font-family: "Libre Baskerville", Georgia, serif;
 }
 
-/* Links */
 a {
   color: #b26ad8;
-  text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+header h1 {
+  font-weight: 700;
 }
 
-/* Post container */
 .post,
 .post-body,
-.content {
-  background: rgba(255, 255, 255, 0.94);
+.content,
+.card {
+  background: rgba(255, 255, 255, 0.95);
   padding: 2.5rem;
   border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(160, 120, 200, 0.15);
+  box-shadow: 0 18px 36px rgba(160, 120, 200, 0.15);
 }
 
-/* Titles */
-h1, h2, h3 {
-  font-family: "Libre Baskerville", Georgia, serif;
-  letter-spacing: 0.02em;
-}
-
-/* Decorative separator before posts */
 .post::before {
   content: "♡";
   display: block;
   text-align: center;
   font-size: 1.4rem;
   color: #d18ce0;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 
-/* Quotes — very Tumblr */
 blockquote {
   border-left: 3px solid #e3b7f2;
-  padding-left: 1rem;
-  color: #6a5a75;
-  font-style: italic;
   background: rgba(240, 225, 255, 0.4);
-  border-radius: 8px;
+  color: #6a5a75;
+  padding-left: 1rem;
+  font-style: italic;
 }
 
-/* Lists */
-ul, ol {
-  padding-left: 1.4rem;
+/* ================================
+   🦇 DARK MODE — Tumblr / Pastel-Goth
+   (Moonwalk-native)
+   ================================ */
+
+html[data-theme="dark"],
+html[data-theme="dark"] body {
+  background: linear-gradient(180deg, #120c16, #1a1222);
+  color: #e6dff0;
 }
 
-/* Small details */
-hr {
-  border: none;
-  height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #d9b7ef,
-    transparent
-  );
-  margin: 3rem 0;
+html[data-theme="dark"] a {
+  color: #d6b3ff;
+}
+
+html[data-theme="dark"] .post,
+html[data-theme="dark"] .post-body,
+html[data-theme="dark"] .content,
+html[data-theme="dark"] .card {
+  background: rgba(26, 18, 36, 0.96);
+  box-shadow: 0 20px 40px rgba(90, 60, 130, 0.45);
+}
+
+html[data-theme="dark"] .post::before {
+  content: "✧";
+  color: #cfa3ff;
+}
+
+html[data-theme="dark"] blockquote {
+  border-left-color: #7d5a9e;
+  background: rgba(40, 28, 60, 0.6);
+  color: #d7cbe8;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3 {
+  color: #f2ebff;
 }
