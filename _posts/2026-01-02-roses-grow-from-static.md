@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: "roses grow from static"
 date: 2026-01-02
 categories: [blog]
