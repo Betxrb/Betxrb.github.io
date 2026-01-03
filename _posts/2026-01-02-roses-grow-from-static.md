@@ -5,7 +5,6 @@ date: 2026-01-02
 categories: [blog]
 tags: [aesthetic, gothic, diary, digital]
 ---
-
 There is a soft violence in being perceived online.
 
 Pixels arrange themselves into something that resembles me,  
