@@ -6,8 +6,6 @@ baseurl: ""
 description: >
   signal received, meaning pending ✦
 
-permalink: /:slug/
-
 favicon: "./logo.png"
 
 twitter:
@@ -28,7 +26,6 @@ theme_config:
 
   show_projects: true
   show_blog: true
-  show_post: true
   show_old_projects: true
   show_misc_list: false
   show_reading_time: true
